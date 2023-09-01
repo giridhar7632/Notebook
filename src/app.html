@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
+		<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="language" content="English" />
+		<meta name="keywords" content="{keywords}" />
+		<meta key="og_locale" property="og:locale" content="en_US" />
+		<meta key="og_type" property="og:type" content="website" />
+		<meta key="og_site" property="og:name" content="notebook-of-giridhar-talla" />
+		<meta key="og_url" property="og:url" content="https://giridhar.pages.dev" />
+
+		<title key="title">Notebook | Exploring the tech with Giridhar</title>
+		<meta
+			key="og_title"
+			property="og:title"
+			content="Notebook | Exploring the tech with Giridhar"
+		/>
+		<meta
+			key="tw_title"
+			name="twitter:title"
+			content="Notebook | Exploring the tech with Giridhar"
+		/>
+
+		<meta
+			key="desc"
+			name="description"
+			content="Hi, I'm Giridhar and this is where I write about my insights on Tech, including topics like Machine Learning, Programming and Web Development."
+		/>
+		<meta
+			key="og_desc"
+			property="og:description"
+			content="Hi, I'm Giridhar and this is where I write about my insights on Tech, including topics like Machine Learning, Programming and Web Development."
+		/>
+		<meta
+			key="tw_desc"
+			name="twitter:description"
+			content="Hi, I'm Giridhar and this is where I write about my insights on Tech, including topics like Machine Learning, Programming and Web Development."
+		/>
+
+		<meta key="og_img" property="og:image" content="/og-image.png" />
+		<meta key="tw_card" name="twitter:card" content="summary_large_image" />
+		<meta key="tw_img" name="twitter:image" content="/og-image.png" />
+
+		<!-- <link rel="manifest" href="/manifest.json" />
+		<link href="/icons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" /> -->
+		<link href="/favicon.png" rel="icon" type="image/png" />
+		<link href="/favicon.ico" rel="icon" type="image/ico" />
+		<meta key="tile_color" name="msapplication-TileColor" content="#2b5797" />
+		<meta key="theme_color" name="theme-color" content="#F5F5F5" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@700,400,600,500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script>
+			localStorage.theme === 'dark' ||
+			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+				? document.documentElement.classList.add('dark')
+				: document.documentElement.classList.remove('dark');
+		</script>
+
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body
+		data-sveltekit-preload-data="hover"
+		class="relative bg-sky-50 ease-in-out dark:bg-gray-900 transition-colors duration-250 overflow-x-hidden"
+	>
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

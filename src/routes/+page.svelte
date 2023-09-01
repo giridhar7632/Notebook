@@ -1,9 +1,6 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+<script>
+	import Button from "../components/common/Button.svelte";
 
-<style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.gray.100);
-  }
-</style>
+</script>
+
+<Button class="text-sm sm:text-base " type="button" variant="outline">Text outline</Button>
