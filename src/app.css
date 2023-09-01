@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	h1,
+	h2,
+	h3,
+	h4,
+	button {
+		font-family: 'Clash Grotesk', 'Inter', sans-serif;
+	}
+
+	*::-webkit-scrollbar {
+		@apply h-4 w-1;
+	}
+
+	*::-webkit-scrollbar-track {
+		@apply rounded bg-gray-100;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		@apply rounded bg-gray-300;
+	}
+
+	*::-webkit-scrollbar-thumb:hover {
+		@apply cursor-pointer bg-gray-400;
+	}
+}
